@@ -1,0 +1,28 @@
+.tasks {
+    background-color: rgb(243, 243, 243);
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 47px;
+        background-color: rgb(243, 243, 243);
+        z-index: -1;
+    }
+
+    &__headline {
+        padding: 25px 0 25px 0;
+        background-color: rgb(243, 243, 243);
+        text-align: center;
+        font-size: 16px;
+        color: rgb(170, 170, 170);
+    }
+
+    &__categories {
+        padding: 0 18px;
+        border-radius: 12px 12px 0 0;
+        background-color: white;
+    }
+}

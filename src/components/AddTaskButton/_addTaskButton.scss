@@ -1,0 +1,54 @@
+.btn-container {
+    position: fixed;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+
+    &:after {
+        content: "";
+        position: fixed;
+        top: 22px;
+        left: calc(22px - 50vw);
+        width: 100vw;
+        height: 1px;
+        background-color: rgba(240, 240, 240, 0.5);
+        z-index: -1;
+    }
+
+    .btn-add {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px 0 rgb(151, 151, 151);
+        border: none;
+        color: white;
+        background-color: rgb(109, 211, 109);
+        font-size: 30px;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: white;
+        }
+
+        &::before {
+            top: 15px;
+            left: 50%;
+            bottom: 15px;
+            width: 2px;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            top: 50%;
+            left: 15px;
+            right: 15px;
+            height: 2px;
+            transform: translateY(-50%);
+        }
+    }
+}

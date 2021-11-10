@@ -1,0 +1,23 @@
+.time-and-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 22px;
+    background-color: transparent;
+
+    .time {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70px;
+
+        .icon {
+            font-size: 15px;
+        }
+    }
+}

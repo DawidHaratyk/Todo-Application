@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.circle-red {
+    background-color: rgb(207, 0, 0);
+}
+
+.circle-gray {
+    background-color: rgb(156, 156, 156);
+}
+
+.circle-green {
+    background-color: rgb(32, 216, 32);
+}
+
+.circle-green-light {
+    background-color: rgba(0, 175, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.react-calendar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    max-width: 350% !important;
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 360px;
+        height: 640px;
+        border: 1px solid rgb(129, 129, 129);
+        overflow: hidden;
+    }
+}
